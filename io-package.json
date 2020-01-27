@@ -1,8 +1,29 @@
 {
 	"common": {
 		"name": "mercedesme",
-		"version": "0.0.12",
+		"version": "0.0.20",
 		"news": {
+			"0.0.19": {
+				"en": "Improve error handling"
+			},
+			"0.0.18": {
+				"en": "Bugfixing"
+			},
+			"0.0.17": {
+				"en": "add connection via ODB Adapter (Adapter App)"
+			},
+			"0.0.16": {
+				"en": "fix fueling will not recording probably"
+			},
+			"0.0.15": {
+				"en": "fix soc history bug, add basic price and  adapter restart every 6h"
+			},
+			"0.0.14": {
+				"en": "fix when webpage streams are not reachable"
+			},
+			"0.0.13": {
+				"en": "add hard reconnect after 6h for stream data"
+			},
 			"0.0.12": {
 				"en": "add gas prices via tankerkönig"
 			},
@@ -100,7 +121,7 @@
 		"readme": "https://github.com/TA2k/ioBroker.mercedesme/blob/master/README.md",
 		"loglevel": "info",
 		"mode": "daemon",
-		"type": "household",
+		"type": "vehicle",
 		"compact": true,
 		"materialize": true,
 		"dependencies": [
@@ -126,7 +147,12 @@
 		"scope": "",
 		"apiKey": "",
 		"gas": "",
-		"kwprice": ""
+		"kwprice": "",
+		"acceptL": "de_DE",
+		"countryC": "DE",
+		"disableSocket": false,
+		"isAdapter": false,
+		"ciam": ""
 	},
 	"objects": [],
 	"instanceObjects": []
